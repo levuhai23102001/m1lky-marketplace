@@ -1,10 +1,11 @@
 import React from "react";
-import "./App.css";
+import MainLayout from "./layouts";
+import "./App.scss";
 
 function App() {
   return (
     <div className="App">
-      <h1>Welcome to React</h1>
+      <MainLayout />
     </div>
   );
 }
