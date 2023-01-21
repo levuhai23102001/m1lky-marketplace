@@ -6,9 +6,16 @@
 
 html,
 body {
+  position: relative;
   height: 100%;
   width: 100%;
-  position: relative;
+}
+
+body {
+  color: #000;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 ::-webkit-scrollbar {
@@ -24,4 +31,20 @@ body {
 }
 ::-webkit-scrollbar-track {
   background-color: #000;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+button,
+input {
+  outline: 0;
 }

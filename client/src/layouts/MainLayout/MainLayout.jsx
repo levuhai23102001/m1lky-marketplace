@@ -1,16 +1,14 @@
 import React from "react";
-import Background from "../Background";
-
+import Navbar from "../components/Navbar";
+import Sidebar from "../components/Sidebar";
 import "./mainLayout.scss";
 
 const MainLayout = () => {
   return (
     <>
       <div className="wrapper">
-        <Background />
-        <h1>NAVBAR</h1>
-        <h1>SIDEBAR</h1>
-        <h1>CONTENT</h1>
+        <Navbar />
+        <Sidebar />
       </div>
     </>
   );
