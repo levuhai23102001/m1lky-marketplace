@@ -2,7 +2,13 @@ import React from "react";
 import "./search.scss";
 
 const Search = () => {
-  return <div>Search</div>;
+  return (
+    <>
+      <div className="search-bar">
+        <input type="text" placeholder="Search" />
+      </div>
+    </>
+  );
 };
 
 export default Search;

@@ -8,7 +8,7 @@ const MainLayout = () => {
     <>
       <div className="wrapper">
         <Navbar />
-        <Sidebar />
+        {/* <Sidebar /> */}
       </div>
     </>
   );

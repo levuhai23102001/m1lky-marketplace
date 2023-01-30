@@ -1,6 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Search from "../Search";
+import avatar from "../../../assets/images/avatar/anya.jpg";
+import { FaCloud, FaBell } from "react-icons/fa";
+
 import "./navbar.scss";
 
 const Navbar = () => {
@@ -19,6 +22,18 @@ const Navbar = () => {
             <div className="navbar-menu__item">Marketplace</div>
           </div>
           <Search />
+          <div className="navbar-user">
+            <div className="notification">
+              <span className="notification-number">3</span>
+              <FaBell />
+            </div>
+            <div className="cloud">
+              <FaCloud />
+            </div>
+            <div className="profile">
+              <img className="profile-img" src={avatar} alt="" />
+            </div>
+          </div>
         </div>
       </div>
     </>
