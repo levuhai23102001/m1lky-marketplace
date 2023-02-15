@@ -7,14 +7,14 @@
   backdrop-filter: blur(10px);
 }
 
-.container {
-  max-width: 1028px;
-  margin-left: auto;
-  margin-right: auto;
+.main-container {
+  display: flex;
+  width: 1028px;
+  max-width: 100%;
+  margin-top: 66px;
+  padding: 0;
 }
 
-.container-md {
-  max-width: 768px;
-  margin-left: auto;
-  margin-right: auto;
+.wrapper-content {
+  flex: 1;
 }
