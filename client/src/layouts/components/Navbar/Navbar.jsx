@@ -12,8 +12,10 @@ const Navbar = () => {
       <div className="m1lky-navbar navbar">
         <div className="navbar-wrapper">
           <div className="navbar-brand">
-            <img src="" alt="" className="navbar-brand__logo" />
-            <span className="navbar-brand__name">M 1 L K Y</span>
+            {/* <img src="" alt="" className="navbar-brand__logo" /> */}
+            <span data-text="M 1 L K Y" className="navbar-brand__name">
+              M 1 L K Y
+            </span>
           </div>
           <div className="navbar-menu">
             <div className="navbar-menu__item">Apps</div>

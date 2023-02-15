@@ -23,43 +23,27 @@
 
 .navbar-brand__name {
   position: relative;
+  display: flex;
+  padding-left: 20px;
   color: whitesmoke;
   font-size: 30px;
   font-weight: 800;
-  padding: 30px 30px 0 30px;
-  &::before,
-  &::after {
-    content: "M 1 L K Y";
+  order: 2;
+  transform: skew(0, -6deg);
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: 3px 1px 1px #4af7ff, 2px 2px 1px #165bfb, 4px 2px 1px #4af7ff,
+    3px 3px 1px #165bfb, 5px 3px 1px #4af7ff, 4px 4px 1px #165bfb,
+    6px 4px 1px #4af7ff, 5px 5px 1px #165bfb, 7px 5px 1px #4af7ff,
+    6px 6px 1px #165bfb, 8px 6px 1px #4af7ff, 7px 7px 1px #165bfb,
+    9px 7px 1px #4af7ff;
+  &:before {
+    content: attr(data-text);
     position: absolute;
-    top: 0;
-    color: whitesmoke;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    padding: 30px 30px 0 30px;
+    text-shadow: 2px 2px 1px #e94aa1, -1px -1px 1px #c736f9,
+      -2px 2px 1px #e94aa1, 1px -1px 1px #f736f9;
+    z-index: 1;
   }
-}
-
-.navbar-brand__name::before {
-  left: 3px;
-  text-shadow: -2px 0 red;
-  animation-name: glitch-animation-1;
-  animation-duration: 2s;
-  animation-timing-function: linear;
-  animation-delay: 0s;
-  animation-iteration-count: infinite;
-  animation-direction: reverse-alternate;
-}
-
-.navbar-brand__name::after {
-  left: -3px;
-  text-shadow: -2px 0 blue;
-  animation-name: glitch-animation-2;
-  animation-duration: 2s;
-  animation-timing-function: linear;
-  animation-delay: 0s;
-  animation-iteration-count: infinite;
-  animation-direction: reverse-alternate;
 }
 
 .navbar-menu {
@@ -115,23 +99,5 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-  }
-}
-
-@keyframes glitch-animation-1 {
-  $steps: 20;
-  @for $i from 0 through $steps {
-    #{percentage($i*(1/$steps))} {
-      clip: rect(random(150) + px, 350px, random(150) + px, 30px);
-    }
-  }
-}
-
-@keyframes glitch-animation-2 {
-  $steps: 20;
-  @for $i from 0 through $steps {
-    #{percentage($i * (1 / $steps))} {
-      clip: rect(random(150) + px, 350px, random(150) + px, 30px);
-    }
   }
 }
