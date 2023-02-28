@@ -1,0 +1,29 @@
+.sidebar-title {
+  margin-bottom: 14px;
+  font-size: 16px;
+  font-weight: 500;
+}
+.sidebar-menu {
+  white-space: nowrap;
+  margin-bottom: 14px;
+  &__item {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 6px;
+    transition: 0.3s;
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.45);
+    }
+  }
+  svg {
+    width: 16px;
+    margin-right: 8px;
+  }
+}
+
+.menu-item__link {
+  color: #333;
+}

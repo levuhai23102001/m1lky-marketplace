@@ -4,14 +4,14 @@ import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
 import "./mainLayout.scss";
 
-const MainLayout = ({ Children }) => {
+const MainLayout = ({ children }) => {
   return (
     <>
       <div className="wrapper">
         <Navbar />
         <div className="main-container">
           <Sidebar />
-          <div className="wrapper-content">{Children}</div>
+          <div className="wrapper-content">{children}</div>
         </div>
       </div>
     </>

@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import Search from "../Search";
 import avatar from "../../../assets/images/avatar/anya.jpg";
 import { FaCloud, FaBell } from "react-icons/fa";
@@ -16,10 +17,26 @@ const Navbar = () => {
             </span>
           </div>
           <div className="navbar-menu">
-            <div className="navbar-menu__item">Apps</div>
-            <div className="navbar-menu__item">Docs</div>
-            <div className="navbar-menu__item">Discovery</div>
-            <div className="navbar-menu__item">Marketplace</div>
+            <div className="navbar-menu__item">
+              <NavLink to="/" className="navbar-menu__item__link">
+                Apps
+              </NavLink>
+            </div>
+            <div className="navbar-menu__item">
+              <NavLink to="docs" className="navbar-menu__item__link">
+                Docs
+              </NavLink>
+            </div>
+            <div className="navbar-menu__item">
+              <NavLink to="/discovery" className="navbar-menu__item__link">
+                Discovery
+              </NavLink>
+            </div>
+            <div className="navbar-menu__item">
+              <NavLink to="/marketplace" className="navbar-menu__item__link">
+                Marketplace
+              </NavLink>
+            </div>
           </div>
           <Search />
           <div className="navbar-user">
